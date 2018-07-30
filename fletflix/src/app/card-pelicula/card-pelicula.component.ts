@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {PeliculasService} from "../pelicula/peliculas.service";
 
 @Component({
   selector: 'app-card-pelicula',
@@ -10,9 +11,16 @@ export class CardPeliculaComponent implements OnInit {
 @Input() imagen;
   @Input() titulo;
   @Input() popularidad;
-  constructor() { }
+  @Input()id;
+
+  constructor(private service: PeliculasService) { }
+
 
   ngOnInit() {
+  }
+
+  colocarId(id){
+    this.service.setIdPelicula(id)
   }
 
 }

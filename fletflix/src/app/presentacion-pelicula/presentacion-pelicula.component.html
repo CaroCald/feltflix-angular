@@ -1,10 +1,31 @@
-<div class="container">
+
+<app-nav-bar></app-nav-bar>
+
+<div class="container" style="margin-top: 60px">
+  <h3>{{titulo}}</h3>
   <div class="row">
     <div class="col-sm-6">
-      <iframe width="560" height="315" src={{detalles.trailer}} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="card">
+        <div class="row">
+        <div class="col-sm-4"> </div>
+        <div class="col-sm-4">
+          <img src={{detalle}} alt="" style="height: 270px; width: 185px; align-content: center">
+        </div>
+        <div class="col-sm-4"> </div>
+        </div>
+      </div>
     </div>
     <div class="col-sm-6">
-
+      <div class="card">
+    <p>
+      {{descripcion}}
+    </p>
+    </div>
     </div>
   </div>
+</div>
+
+<div class="container" style="margin-top: 30px">
+  <h3>Trailer</h3>
+  <iframe width="560" height="315" [src]="trailer" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>

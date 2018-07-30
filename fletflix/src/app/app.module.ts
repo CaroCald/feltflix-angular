@@ -15,9 +15,12 @@ import {PeliculasService} from "./pelicula/peliculas.service";
 import {HttpClientModule} from "@angular/common/http";
 import {MatButtonModule} from '@angular/material/button';
 import {MatBadgeModule} from '@angular/material/badge';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule, MatToolbarModule} from "@angular/material";
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
 import { PresentacionPeliculaComponent } from './presentacion-pelicula/presentacion-pelicula.component';
+import {FormsModule} from "@angular/forms";
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +34,7 @@ import { PresentacionPeliculaComponent } from './presentacion-pelicula/presentac
     PresentacionPeliculaComponent
   ],
   imports: [
-    MatButtonModule,MatBadgeModule,
+    MatButtonModule,MatBadgeModule, FormsModule, MatInputModule,MatSelectModule, MatToolbarModule,
     HttpClientModule,MatCardModule,BrowserAnimationsModule,BrowserModule,RouterModule.forRoot(
       RUTAS_APP,
       {

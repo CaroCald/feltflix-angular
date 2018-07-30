@@ -10,6 +10,7 @@ import {HttpClient} from "@angular/common/http";
 export class PeliculaComponent implements OnInit {
 peliculas:results[];
 detalle="http://image.tmdb.org/t/p/w185/";
+
   constructor(private servicioPelicula: PeliculasService, private http: HttpClient) { }
 
   ngOnInit() {
@@ -18,6 +19,8 @@ detalle="http://image.tmdb.org/t/p/w185/";
       }
 
     )
+
   }
+
 
 }
