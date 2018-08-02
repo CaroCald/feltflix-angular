@@ -14,16 +14,12 @@ userUrl='http://localhost:3000/usuario/crear';
 
   nombre;
   apellido;
-  correo;
+  correoElectronico;
   pais;
   ciudad;
   numeroTelefono;
-  fecha;
-  tipoUsuarios = [
-    {value: 'admin', viewValue: 'Administrador'},
-    {value: 'general', viewValue: 'Usuario General'},
-  ];
-  tipo;
+  fechaNacimiento;
+
   ngOnInit() {
   }
   addUsuario (usuario:UsuarioP): Observable<Usuario> {
@@ -31,7 +27,7 @@ userUrl='http://localhost:3000/usuario/crear';
 
   }
   crearUsuario(){
-   this.addUsuario(new UsuarioP(this.nombre, this.apellido, this.fecha, this.pais, this.ciudad,this.numeroTelefono ,this.correo))
+   this.addUsuario(new UsuarioP(this.nombre, this.apellido, this.fechaNacimiento, this.pais, this.ciudad,this.numeroTelefono ,this.correoElectronico))
   }
 
 }
@@ -50,6 +46,5 @@ export class UsuarioP {
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type':  'application/json',
-    'Authorization': 'my-auth-token'
   })
 };

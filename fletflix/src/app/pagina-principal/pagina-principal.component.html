@@ -5,22 +5,21 @@
       <nav class="navbar navbar-light bg-light" style="width: 180px; margin-top: 20px; height:500px">
       <ul class="nav flex-column">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Comedia</a>
+          <a class="nav-link active" routerLink="/peliculas/populares">Populares</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Romance</a>
+          <a class="nav-link"  routerLink="/peliculas/accion">Accion</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Drama</a>
+          <a class="nav-link" routerLink="/peliculas/drama" >Drama</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Terror</a>
+          <a class="nav-link"routerLink="/peliculas/terror" >Terror</a>
         </li>
       </ul>
       </nav>
     </div>
     <div class="col-sm-11">
-
-      <app-pelicula></app-pelicula>
+      <router-outlet></router-outlet>
   </div>
 </div>

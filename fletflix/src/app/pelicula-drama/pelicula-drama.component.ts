@@ -4,17 +4,18 @@ import {HttpClient} from "@angular/common/http";
 import {Router} from "@angular/router";
 
 @Component({
-  selector: 'app-pagina-principal',
-  templateUrl: './pagina-principal.component.html',
-  styleUrls: ['./pagina-principal.component.css']
+  selector: 'app-pelicula-drama',
+  templateUrl: './pelicula-drama.component.html',
+  styleUrls: ['./pelicula-drama.component.css']
 })
-export class PaginaPrincipalComponent implements OnInit {
+export class PeliculaDramaComponent implements OnInit {
+
   constructor(private servicioPelicula: PeliculasService, private http: HttpClient, private router:Router) {
   }
-
   peliculas: results[];
   detalle = "http://image.tmdb.org/t/p/w185/";
   ngOnInit() {
+    this.cargarDrama();
   }
   cargarDrama() {
     this.http.get<Peliculas>('https://api.themoviedb.org/3/discover/movie?api_key=aadcd48bce7b149720bb697228318d87&language=es&with_genres=18')
@@ -23,4 +24,5 @@ export class PaginaPrincipalComponent implements OnInit {
         }
       )
   }
+
 }

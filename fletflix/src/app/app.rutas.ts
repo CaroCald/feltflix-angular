@@ -5,6 +5,10 @@ import {RegistroComponent} from "./registro/registro.component";
 import {PeliculaComponent} from "./pelicula/pelicula.component";
 import {PaginaPrincipalComponent} from "./pagina-principal/pagina-principal.component";
 import {PresentacionPeliculaComponent} from "./presentacion-pelicula/presentacion-pelicula.component";
+import {PeliculaDramaComponent} from "./pelicula-drama/pelicula-drama.component";
+import {PeliculaAccionComponent} from "./pelicula-accion/pelicula-accion.component";
+import {PeliculaTerrorComponent} from "./pelicula-terror/pelicula-terror.component";
+import {PeliculaPopularesComponent} from "./pelicula-populares/pelicula-populares.component";
 
 export const RUTAS_APP: Routes = [
   {
@@ -25,8 +29,39 @@ export const RUTAS_APP: Routes = [
   {
     path: 'peliculas',
     component: PaginaPrincipalComponent,
+    children:[
+      {
+        path: 'drama',
+        component: PeliculaDramaComponent,
+
+      },
+      {
+        path: 'accion',
+        component: PeliculaAccionComponent,
+
+      },
+      {
+        path: 'terror',
+        component: PeliculaTerrorComponent,
+
+      },
+      {
+        path: 'populares',
+        component: PeliculaPopularesComponent,
+
+      },
+      {
+        path: '**',
+        component: PeliculaPopularesComponent
+
+      }
+    ]
+
+
 
   },
+
+
   {
     path: 'presentacion',
     component: PresentacionPeliculaComponent

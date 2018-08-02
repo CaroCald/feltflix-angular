@@ -21,6 +21,10 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
 import { PresentacionPeliculaComponent } from './presentacion-pelicula/presentacion-pelicula.component';
 import {FormsModule} from "@angular/forms";
+import { PeliculaDramaComponent } from './pelicula-drama/pelicula-drama.component';
+import { PeliculaAccionComponent } from './pelicula-accion/pelicula-accion.component';
+import { PeliculaTerrorComponent } from './pelicula-terror/pelicula-terror.component';
+import { PeliculaPopularesComponent } from './pelicula-populares/pelicula-populares.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +35,11 @@ import {FormsModule} from "@angular/forms";
     PeliculaComponent,
     NavBarComponent,
     PaginaPrincipalComponent,
-    PresentacionPeliculaComponent
+    PresentacionPeliculaComponent,
+    PeliculaDramaComponent,
+    PeliculaAccionComponent,
+    PeliculaTerrorComponent,
+    PeliculaPopularesComponent
   ],
   imports: [
     MatButtonModule,MatBadgeModule, FormsModule, MatInputModule,MatSelectModule, MatToolbarModule,

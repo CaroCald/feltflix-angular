@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import {PeliculasService, Peliculas, results} from "./peliculas.service";
+import {Peliculas, PeliculasService, results} from "../pelicula/peliculas.service";
 import {HttpClient} from "@angular/common/http";
 import {Router} from "@angular/router";
 
 @Component({
-  selector: 'app-pelicula',
-  templateUrl: './pelicula.component.html',
-  styleUrls: ['./pelicula.component.css']
+  selector: 'app-pelicula-populares',
+  templateUrl: './pelicula-populares.component.html',
+  styleUrls: ['./pelicula-populares.component.css']
 })
-export class PeliculaComponent implements OnInit {
+export class PeliculaPopularesComponent implements OnInit {
   peliculas: results[];
   detalle = "http://image.tmdb.org/t/p/w185/";
 
@@ -22,5 +22,4 @@ export class PeliculaComponent implements OnInit {
     )
 
   }
-
 }
