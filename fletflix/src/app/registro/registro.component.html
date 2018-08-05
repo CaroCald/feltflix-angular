@@ -1,56 +1,69 @@
-<h3 style="text-align: center; margin-top: 50px; margin-bottom: 50px">Registro de Datos</h3>
-
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page" style="font-size: 20px; text-align: center">Registro de Datos</li>
+  </ol>
+</nav>
 <div class="row">
   <div class="col-sm-2">
     <img src="/assets/bannerLateral.jpg" class="img-fluid" alt="banner">
   </div>
-  <div class="container">
-    <div class="col-sm-8">
+
+
+  <div class="col-sm-8">
+    <div class="container">
       <form>
+        <mat-form-field class="example-full-width">
+    <textarea matInput
+              type="text" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Ingrese su nombre"
+              name="nombre" [(ngModel)]="nombre" #nombreFormulario
+    ></textarea>
+        </mat-form-field>
 
-        <div class="form-group">
-          <label for="nombre">Nombre</label>
-          <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Ingrese su nombre"
-                 name="nombre" [(ngModel)]="nombre" #nombreFormulario
-          >
-        </div>
-        <div class="form-group">
-          <label for="apellido">Apellido</label>
-          <input type="text" class="form-control" id="apellido" placeholder="Ingrese su Apellido"
-                 name="apellido" [(ngModel)]="apellido" #apellidoFormulario>
-        </div>
-        <div class="form-group">
-          <label for="correo">Correo</label>
-          <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo"
-                 name="correo" [(ngModel)]="correoElectronico" #correoFormulario
-          >
-        </div>
-        <div class="form-group">
-          <label for="Pais">Pais</label>
-          <input type="text" class="form-control" id="pais" placeholder="Ingrese su Pais"
-                 name="pais" [(ngModel)]="pais" #paisFormulario>
-        </div>
+        <mat-form-field class="example-full-width">
+    <textarea matInput id="apellido" placeholder="Ingrese su Apellido"
+              name="apellido" [(ngModel)]="apellido" #apellidoFormulario
 
-        <div class="form-group">
-          <label for="ciudad">Ciudad</label>
-          <input type="text" class="form-control" id="ciudad" placeholder="Ingrese su ciudad"
-                 name="ciudad" [(ngModel)]="ciudad" #ciudadFormulario>
-        </div>
+    ></textarea>
+        </mat-form-field>
 
-        <div class="form-group">
-          <label for="telefono">Telefono</label>
-          <input type="text" class="form-control" id="telefono" placeholder="telefono"
-                 name="numeroTelefono" [(ngModel)]="numeroTelefono" #telefonoFormulario>
-        </div>
-        <div class="form-group">
-          <label for="fecha">Fecha</label>
-          <input type="text" class="form-control" id="fecha" placeholder="Ingrese su fecha de nacimiento"
-                 name="fecha" [(ngModel)]="fechaNacimiento" #fechaFormulario>
-        </div>
+        <mat-form-field class="example-full-width">
+    <textarea matInput
+              id="correo" placeholder="Ingrese su correo"
+              name="correo" [(ngModel)]="correoElectronico" #correoFormulario
 
-        <button type="submit" class="btn btn-primary" routerLink="/peliculas">Aceptar</button>
+    ></textarea>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+    <textarea matInput id="pais" placeholder="Ingrese su Pais"
+              name="pais" [(ngModel)]="pais" #paisFormulario
+
+    ></textarea>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+    <textarea matInput id="ciudad" placeholder="Ingrese su ciudad"
+              name="ciudad" [(ngModel)]="ciudad" #ciudadFormulario></textarea>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+    <textarea matInput id="telefono" placeholder="Ingrese su telefono"
+              name="numeroTelefono" [(ngModel)]="numeroTelefono" #telefonoFormulario></textarea>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+         <textarea matInput  id="fecha" placeholder="Ingrese su fecha de nacimiento"
+                   name="fecha" [(ngModel)]="fechaNacimiento" #fechaFormulario></textarea>
+        </mat-form-field>
+
+        <button type="submit" class="btn btn-primary" routerLink="/peliculas" (click)="crear()">Aceptar</button>
       </form>
     </div>
-  </div>
-</div>
 
+  </div>
+
+  <div class="col-sm-2">
+    <img src="/assets/bannerLateral.jpg" class="img-fluid" alt="banner">
+  </div>
+
+</div>

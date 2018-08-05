@@ -1,14 +1,16 @@
 import {Routes} from "@angular/router";
 import {HomeComponent} from "./home/home.component";
 import {LoginComponent} from "./login/login.component";
-import {RegistroComponent} from "./registro/registro.component";
-import {PeliculaComponent} from "./pelicula/pelicula.component";
 import {PaginaPrincipalComponent} from "./pagina-principal/pagina-principal.component";
 import {PresentacionPeliculaComponent} from "./presentacion-pelicula/presentacion-pelicula.component";
 import {PeliculaDramaComponent} from "./pelicula-drama/pelicula-drama.component";
 import {PeliculaAccionComponent} from "./pelicula-accion/pelicula-accion.component";
 import {PeliculaTerrorComponent} from "./pelicula-terror/pelicula-terror.component";
 import {PeliculaPopularesComponent} from "./pelicula-populares/pelicula-populares.component";
+import {RegistroComponent} from "./registro/registro.component";
+import {PeliculaComponent} from "./pelicula/pelicula.component";
+import {SerieComponent} from "./serie/serie.component";
+import {SeriePresentacionComponent} from "./serie-presentacion/serie-presentacion.component";
 
 export const RUTAS_APP: Routes = [
   {
@@ -24,6 +26,21 @@ export const RUTAS_APP: Routes = [
   {
     path: 'registro',
     component: RegistroComponent,
+
+  },
+  {
+    path: 'verPelicula',
+    component: PeliculaComponent,
+
+  },
+  {
+    path: 'series',
+    component: SerieComponent,
+
+  },
+  {
+    path: 'seriePresentacion',
+    component: SeriePresentacionComponent,
 
   },
   {

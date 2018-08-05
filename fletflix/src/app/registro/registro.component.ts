@@ -1,17 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {Observable} from "rxjs/index";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Usuario} from "../servicios/usuario.service";
+
+
+
 @Component({
   selector: 'app-registro',
   templateUrl: './registro.component.html',
   styleUrls: ['./registro.component.css']
 })
 export class RegistroComponent implements OnInit {
-user:Usuario;
-userUrl='http://localhost:3000/usuario/crear';
-  constructor(private http:HttpClient) { }
-
   nombre;
   apellido;
   correoElectronico;
@@ -19,28 +17,33 @@ userUrl='http://localhost:3000/usuario/crear';
   ciudad;
   numeroTelefono;
   fechaNacimiento;
+  picker;
+  constructor(private http: HttpClient) {
+  }
 
   ngOnInit() {
-  }
-  addUsuario (usuario:UsuarioP): Observable<Usuario> {
-    return this.http.post<Usuario>(this.userUrl, usuario, httpOptions)
-
-  }
-  crearUsuario(){
-   this.addUsuario(new UsuarioP(this.nombre, this.apellido, this.fechaNacimiento, this.pais, this.ciudad,this.numeroTelefono ,this.correoElectronico))
+    this.picker=new Date();
   }
 
-}
-export class UsuarioP {
-  constructor(
-    public nombre: string,
-    public apellido: string,
-    public fechaNacimiento: number,
-    public pais: string,
-    public ciudad: string,
-    public numeroTelefono :number,
-    public correoElectronico: string) {
+  cargar(){
+    this.http.get<Usuario>('http://localhost:3000/Usuario/mostrar')
+      .subscribe((value: Usuario) => {
+          console.log(value)
+        }
+      );
 
+  }
+  crear(){
+    this.http.post<Usuario>('http://localhost:3000/Usuario/crear', {
+      tipoUsuario:'general',
+      nombre:this.nombre,
+      apellido: this.apellido,
+      correoElectronico: this.correoElectronico,
+      pais:this.pais,
+      ciudad: this.ciudad,
+      numeroTelefono: this.numeroTelefono,
+      fechaNacimiento:this.fechaNacimiento
+    }, httpOptions).subscribe(value => console.log(value))
   }
 }
 const httpOptions = {

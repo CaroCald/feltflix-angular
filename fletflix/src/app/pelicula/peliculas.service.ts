@@ -22,6 +22,14 @@ export interface results {
   key:string,
   id:string,
   genres:string
+  homepage:string,
+  original_languaje:string,
+  release_date:string,
+  home_page: string,
+  original_title:string
+}
+export interface genres {
+  name:string
 }
 export interface Peliculas{
   results:results[]

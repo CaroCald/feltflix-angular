@@ -8,7 +8,13 @@
     <ul class="navbar-nav mr-auto">
 
       <li class="nav-item">
-        <a class="nav-link">Bienvenido</a>
+        <a class="nav-link">Bienvenido {{username}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/peliculas">Peliculas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/series">Series</a>
       </li>
 
     </ul>
@@ -17,7 +23,7 @@
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Mi cuenta</button>
       </li>
       <li class="nav-item">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerrar Sesion</button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" routerLink="/home">Cerrar Sesion</button>
       </li>
     </ul>
   </div>

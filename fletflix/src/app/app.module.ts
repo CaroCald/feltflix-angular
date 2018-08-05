@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import { RegistroComponent } from './registro/registro.component';
 import {RouterModule} from "@angular/router";
 import {RUTAS_APP} from "./app.rutas";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -25,12 +24,20 @@ import { PeliculaDramaComponent } from './pelicula-drama/pelicula-drama.componen
 import { PeliculaAccionComponent } from './pelicula-accion/pelicula-accion.component';
 import { PeliculaTerrorComponent } from './pelicula-terror/pelicula-terror.component';
 import { PeliculaPopularesComponent } from './pelicula-populares/pelicula-populares.component';
+import { VerPeliculaComponent } from './ver-pelicula/ver-pelicula.component';
+import {RegistroComponent} from "./registro/registro.component";
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatRadioModule} from '@angular/material/radio';
+import { CookieService } from 'ngx-cookie-service';
+import { SerieComponent } from './serie/serie.component';
+import { SeriePresentacionComponent } from './serie-presentacion/serie-presentacion.component';
+import { CardSerieComponent } from './card-serie/card-serie.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    RegistroComponent,
     CardPeliculaComponent,
     PeliculaComponent,
     NavBarComponent,
@@ -39,18 +46,24 @@ import { PeliculaPopularesComponent } from './pelicula-populares/pelicula-popula
     PeliculaDramaComponent,
     PeliculaAccionComponent,
     PeliculaTerrorComponent,
-    PeliculaPopularesComponent
+    PeliculaPopularesComponent,
+    VerPeliculaComponent,
+    RegistroComponent,
+    SerieComponent,
+    SeriePresentacionComponent,
+    CardSerieComponent
   ],
   imports: [
     MatButtonModule,MatBadgeModule, FormsModule, MatInputModule,MatSelectModule, MatToolbarModule,
-    HttpClientModule,MatCardModule,BrowserAnimationsModule,BrowserModule,RouterModule.forRoot(
+    HttpClientModule, MatDatepickerModule,MatRadioModule
+    ,MatCardModule,BrowserAnimationsModule,BrowserModule,RouterModule.forRoot(
       RUTAS_APP,
       {
         useHash: true
       }
     )
   ],
-  providers: [PeliculasService],
+  providers: [PeliculasService, CookieService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -3,14 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="bb6219ca-3844-4e3b-aa20-ab9263225ab3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fletflix/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fletflix/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fletflix/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fletflix/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fletflix/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fletflix/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fletflix/src/app/app.rutas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fletflix/src/app/app.rutas.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fletflix/src/app/card-pelicula/card-pelicula.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fletflix/src/app/card-pelicula/card-pelicula.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fletflix/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/fletflix/src/app/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fletflix/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fletflix/src/app/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fletflix/src/app/nav-bar/nav-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/fletflix/src/app/nav-bar/nav-bar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fletflix/src/app/nav-bar/nav-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fletflix/src/app/nav-bar/nav-bar.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fletflix/src/app/pagina-principal/pagina-principal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/fletflix/src/app/pagina-principal/pagina-principal.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fletflix/src/app/pagina-principal/pagina-principal.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fletflix/src/app/pagina-principal/pagina-principal.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fletflix/src/app/pelicula/pelicula.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fletflix/src/app/pelicula/pelicula.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fletflix/src/app/registro/registro.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/fletflix/src/app/registro/registro.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fletflix/src/app/registro/registro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fletflix/src/app/registro/registro.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fletflix/src/app/pelicula-accion/pelicula-accion.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fletflix/src/app/pelicula-accion/pelicula-accion.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fletflix/src/app/pelicula/pelicula.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/fletflix/src/app/pelicula/pelicula.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fletflix/src/app/pelicula/peliculas.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fletflix/src/app/pelicula/peliculas.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fletflix/src/app/presentacion-pelicula/presentacion-pelicula.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/fletflix/src/app/presentacion-pelicula/presentacion-pelicula.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fletflix/src/app/presentacion-pelicula/presentacion-pelicula.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fletflix/src/app/presentacion-pelicula/presentacion-pelicula.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fletflix/src/app/registro/registro.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fletflix/src/app/registro/registro.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fletflix/src/app/registro/registro.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fletflix/src/app/registro/registro.component.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/fletflix/src/app/servicios/usuario.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/fletflix/src/app/servicios/usuario.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,38 +39,55 @@
       <file leaf-file-name="app.rutas.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fletflix/src/app/app.rutas.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1014">
-              <caret line="49" column="45" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
+            <state relative-caret-position="241">
+              <caret line="40" column="3" lean-forward="true" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pelicula-populares.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fletflix/src/app/pelicula-populares/pelicula-populares.component.html">
+      <file leaf-file-name="serie.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fletflix/src/app/serie/serie.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pagina-principal.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fletflix/src/app/pagina-principal/pagina-principal.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pelicula.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fletflix/src/app/pelicula/pelicula.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+            <state relative-caret-position="243">
+              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="serie.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fletflix/src/app/serie/serie.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="card-serie.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fletflix/src/app/card-serie/card-serie.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="card-pelicula.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fletflix/src/app/card-pelicula/card-pelicula.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -83,31 +111,42 @@
         <option value="$PROJECT_DIR$/fletflix/src/app/login/login.component.html" />
         <option value="$PROJECT_DIR$/fletflix/src/styles.css" />
         <option value="$PROJECT_DIR$/fletflix/src/app/pagina-principal/pagina-principal.component.css" />
-        <option value="$PROJECT_DIR$/fletflix/src/index.html" />
-        <option value="$PROJECT_DIR$/fletflix/src/app/nav-bar/nav-bar.component.html" />
-        <option value="$PROJECT_DIR$/fletflix/src/app/pelicula/pelicula.component.html" />
-        <option value="$PROJECT_DIR$/fletflix/src/app/card-pelicula/card-pelicula.component.ts" />
-        <option value="$PROJECT_DIR$/fletflix/src/app/card-pelicula/card-pelicula.component.html" />
-        <option value="$PROJECT_DIR$/fletflix/src/app/presentacion-pelicula/presentacion-pelicula.component.ts" />
-        <option value="$PROJECT_DIR$/fletflix/src/app/presentacion-pelicula/presentacion-pelicula.component.html" />
-        <option value="$PROJECT_DIR$/fletflix/src/app/pelicula/peliculas.service.ts" />
-        <option value="$PROJECT_DIR$/fletflix/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/fletflix/src/app/home/home.component.html" />
-        <option value="$PROJECT_DIR$/fletflix/src/app/registro/registro.component.html" />
-        <option value="$PROJECT_DIR$/fletflix/src/app/registro/registro.component.ts" />
         <option value="$PROJECT_DIR$/fletflix/src/app/pelicula-drama/pelicula-drama.component.html" />
         <option value="$PROJECT_DIR$/fletflix/src/app/pagina-principal/pagina-principal.component.ts" />
-        <option value="$PROJECT_DIR$/fletflix/src/app/servicios/usuario.service.ts" />
         <option value="$PROJECT_DIR$/fletflix/src/app/pelicula-drama/pelicula-drama.component.ts" />
-        <option value="$PROJECT_DIR$/fletflix/src/app/pelicula-accion/pelicula-accion.component.ts" />
-        <option value="$PROJECT_DIR$/fletflix/src/app/pelicula-accion/pelicula-accion.component.html" />
         <option value="$PROJECT_DIR$/fletflix/src/app/pelicula/pelicula.component.ts" />
         <option value="$PROJECT_DIR$/fletflix/src/app/pelicula-terror/pelicula-terror.component.ts" />
         <option value="$PROJECT_DIR$/fletflix/src/app/pelicula-terror/pelicula-terror.component.html" />
         <option value="$PROJECT_DIR$/fletflix/src/app/pelicula-populares/pelicula-populares.component.ts" />
         <option value="$PROJECT_DIR$/fletflix/src/app/pelicula-populares/pelicula-populares.component.html" />
-        <option value="$PROJECT_DIR$/fletflix/src/app/app.rutas.ts" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/registrarse/registrarse.component.html" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/registrarse/registrarse.component.ts" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/servicios/usuario.service.ts" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/registro/registro.component.css" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/home/home.component.html" />
+        <option value="$PROJECT_DIR$/fletflix/src/index.html" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/registro/registro.component.ts" />
         <option value="$PROJECT_DIR$/fletflix/src/app/pagina-principal/pagina-principal.component.html" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/nav-bar/nav-bar.component.ts" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/presentacion-pelicula/presentacion-pelicula.component.ts" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/presentacion-pelicula/presentacion-pelicula.component.html" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/pelicula/pelicula.component.html" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/registro/registro.component.html" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/nav-bar/nav-bar.component.html" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/pelicula/peliculas.service.ts" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/serie/serie.component.ts" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/serie-presentacion/serie-presentacion.component.ts" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/serie-presentacion/serie-presentacion.component.html" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/pelicula-accion/pelicula-accion.component.ts" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/pelicula-accion/pelicula-accion.component.html" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/card-pelicula/card-pelicula.component.ts" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/card-pelicula/card-pelicula.component.html" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/card-serie/card-serie.component.ts" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/serie/serie.component.html" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/app.rutas.ts" />
+        <option value="$PROJECT_DIR$/fletflix/src/app/card-serie/card-serie.component.html" />
       </list>
     </option>
   </component>
@@ -135,6 +174,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,20 +206,12 @@
               <item name="fletflix" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pagina-principal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fletflix-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fletflix-angular" type="462c0819:PsiDirectoryNode" />
-              <item name="fletflix" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="environments" type="462c0819:PsiDirectoryNode" />
+              <item name="serie-presentacion" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -231,28 +263,31 @@
       <workItem from="1532974357049" duration="4329000" />
       <workItem from="1532981893744" duration="3454000" />
       <workItem from="1533138080664" duration="6997000" />
-      <workItem from="1533235491244" duration="106000" />
+      <workItem from="1533235491244" duration="947000" />
+      <workItem from="1533316225054" duration="570000" />
+      <workItem from="1533416611707" duration="2742000" />
+      <workItem from="1533423028231" duration="24736000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47284000" />
+    <option name="totallyTimeSpent" value="76279000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="11" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3191801" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25402635" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32465544" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32465544" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -269,132 +304,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/registro/registro.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="28" column="114" lean-forward="true" selection-start-line="28" selection-start-column="114" selection-end-line="28" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/presentacion-pelicula/presentacion-pelicula.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/presentacion-pelicula/presentacion-pelicula.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/card-pelicula/card-pelicula.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="94" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/pelicula/peliculas.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/presentacion-pelicula/presentacion-pelicula.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/presentacion-pelicula/presentacion-pelicula.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/card-pelicula/card-pelicula.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="94" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/pelicula/peliculas.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/presentacion-pelicula/presentacion-pelicula.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/presentacion-pelicula/presentacion-pelicula.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/pelicula/pelicula.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/app.rutas.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/pelicula/peliculas.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/home/home.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/registro/registro.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/login/login.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fletflix/src/app/app.rutas.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -423,13 +332,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="61" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fletflix/src/app/login/login.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
@@ -444,41 +346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/card-pelicula/card-pelicula.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/card-pelicula/card-pelicula.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="94" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/presentacion-pelicula/presentacion-pelicula.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/pelicula/peliculas.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fletflix/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -486,73 +353,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/presentacion-pelicula/presentacion-pelicula.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="36" column="73" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/home/home.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/nav-bar/nav-bar.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/registro/registro.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="46" column="105" selection-start-line="46" selection-start-column="105" selection-end-line="46" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/registro/registro.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/pagina-principal/pagina-principal.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/servicios/usuario.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fletflix/src/app/pelicula-drama/pelicula-drama.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/pelicula-accion/pelicula-accion.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="15" column="3" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="15" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -570,45 +374,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/pelicula-accion/pelicula-accion.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/app.rutas.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1014">
-          <caret line="49" column="45" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/pelicula/pelicula.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fletflix/src/app/pelicula-populares/pelicula-populares.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="18" column="155" selection-start-line="18" selection-start-column="155" selection-end-line="18" selection-end-column="155" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/pelicula-populares/pelicula-populares.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/pagina-principal/pagina-principal.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -619,13 +388,318 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fletflix/src/app/pelicula/pelicula.component.ts">
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/pelicula-populares/pelicula-populares.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        <state relative-caret-position="26">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/registrarse/registrarse.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/registrarse/registrarse.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/registro/registro.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/servicios/usuario.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="19" column="2" lean-forward="true" selection-start-line="15" selection-end-line="19" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/assets/bannerLateral.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/assets/logo3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/assets/logo2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/assets/logo1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="61" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/registro/registro.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/registro/registro.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="50" selection-start-column="50" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/home/home.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/nav-bar/nav-bar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/pagina-principal/pagina-principal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/pelicula/pelicula.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/pelicula/pelicula.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/pelicula/peliculas.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/card-pelicula/card-pelicula.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/card-pelicula/card-pelicula.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/nav-bar/nav-bar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/registro/registro.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ol#0;n#nav#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/pagina-principal/pagina-principal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/presentacion-pelicula/presentacion-pelicula.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/serie-presentacion/serie-presentacion.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/presentacion-pelicula/presentacion-pelicula.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="7" column="46" lean-forward="true" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#3;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#3;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/serie-presentacion/serie-presentacion.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#3;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#3;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/pelicula-accion/pelicula-accion.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/pelicula-accion/pelicula-accion.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-442">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/card-serie/card-serie.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/card-pelicula/card-pelicula.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/card-pelicula/card-pelicula.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/serie/serie.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/serie/serie.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/app.rutas.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="40" column="3" lean-forward="true" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fletflix/src/app/card-serie/card-serie.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
         </state>
       </provider>
     </entry>
