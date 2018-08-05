@@ -18,7 +18,7 @@ export class CardSerieComponent implements OnInit {
   ngOnInit() {
   }
   colocarId(id){
-    this.service.setIdPelicula(id)
+    this.service.setIdSeries(id)
   }
 
 }
