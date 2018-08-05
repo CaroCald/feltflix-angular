@@ -16,7 +16,8 @@ export class PeliculaTerrorComponent implements OnInit {
   constructor(private servicioPelicula: PeliculasService, private http: HttpClient, private router:Router) {
   }
   ngOnInit() {
-    this.cargarTerror()
+    this.cargarTerror();
+    this.escucharCambiosPelicula();
   }
 
   cargarTerror() {
@@ -26,5 +27,8 @@ export class PeliculaTerrorComponent implements OnInit {
         }
 
       )
+  }
+  escucharCambiosPelicula(){
+    this.servicioPelicula.cambioPelicula.subscribe((value: Peliculas)=> this.peliculas=value.results);
   }
 }

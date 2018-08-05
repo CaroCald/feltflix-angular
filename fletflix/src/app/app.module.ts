@@ -32,6 +32,7 @@ import { CookieService } from 'ngx-cookie-service';
 import { SerieComponent } from './serie/serie.component';
 import { SeriePresentacionComponent } from './serie-presentacion/serie-presentacion.component';
 import { CardSerieComponent } from './card-serie/card-serie.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { CardSerieComponent } from './card-serie/card-serie.component';
     RegistroComponent,
     SerieComponent,
     SeriePresentacionComponent,
-    CardSerieComponent
+    CardSerieComponent,
+    SearchBarComponent
   ],
   imports: [
     MatButtonModule,MatBadgeModule, FormsModule, MatInputModule,MatSelectModule, MatToolbarModule,

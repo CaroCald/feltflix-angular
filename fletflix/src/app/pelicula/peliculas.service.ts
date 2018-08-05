@@ -1,10 +1,11 @@
 import {Injectable} from "@angular/core";
 import {Observable} from "rxjs/index";
 import {HttpClient} from "@angular/common/http";
-
+import {EventEmitter} from "@angular/core";
 @Injectable()
 export class PeliculasService {
-
+  pelicula:Peliculas[];
+  cambioPelicula:EventEmitter<Peliculas[]>=new EventEmitter();
   constructor(private http: HttpClient) {
 
   }
@@ -15,6 +16,11 @@ export class PeliculasService {
   }
   setIdSeries(id){
     this.idSerie=id;
+  }
+
+  emitirCambioPelicula(pelicula){
+    this.pelicula=pelicula;
+    this.cambioPelicula.emit(pelicula);
   }
 }
 export interface results {

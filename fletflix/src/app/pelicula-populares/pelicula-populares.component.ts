@@ -19,7 +19,10 @@ export class PeliculaPopularesComponent implements OnInit {
     this.http.get<Peliculas>('https://api.themoviedb.org/3/movie/popular?api_key=aadcd48bce7b149720bb697228318d87&language=es').subscribe((value: Peliculas) => {
         this.peliculas = value.results;
       }
-    )
-
+    );
+  this.escucharCambiosPelicula();
+  }
+  escucharCambiosPelicula(){
+    this.servicioPelicula.cambioPelicula.subscribe((value: Peliculas)=> this.peliculas=value.results);
   }
 }

@@ -1,0 +1,12 @@
+
+      <div class="input-group mb-2 ">
+        <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="buscar"
+               name="param" [(ngModel)]="param" #parametro="ngModel">
+        <div class="input-group-append">
+          <button type="button"  id="buscar" class="btn btn-secondary" (click)="retomarBusqueda(param)">
+            <i class="fas fa-search"> </i>
+          </button>
+        </div>
+      </div>
+
+

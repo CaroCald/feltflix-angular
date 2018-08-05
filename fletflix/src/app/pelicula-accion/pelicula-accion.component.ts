@@ -16,7 +16,8 @@ export class PeliculaAccionComponent implements OnInit {
   constructor(private servicioPelicula: PeliculasService, private http: HttpClient, private router:Router) {
   }
   ngOnInit() {
-    this.cargarAccion()
+    this.cargarAccion();
+    this.escucharCambiosPelicula();
   }
   cargarAccion() {
     this.http.get<Peliculas>('https://api.themoviedb.org/3/discover/movie?api_key=aadcd48bce7b149720bb697228318d87&language=es&with_genres=28')
@@ -29,6 +30,9 @@ export class PeliculaAccionComponent implements OnInit {
          console.log(value)
         }
       )
+  }
+  escucharCambiosPelicula(){
+    this.servicioPelicula.cambioPelicula.subscribe((value: Peliculas)=> this.peliculas=value.results);
   }
 
 }
