@@ -8,6 +8,7 @@ import {PeliculaAccionComponent} from "./pelicula-accion/pelicula-accion.compone
 import {PeliculaTerrorComponent} from "./pelicula-terror/pelicula-terror.component";
 import {PeliculaPopularesComponent} from "./pelicula-populares/pelicula-populares.component";
 import {RegistroComponent} from "./registro/registro.component";
+import {RegistroFacialComponent} from "./registro-facial/registro-facial.component"
 import {PeliculaComponent} from "./pelicula/pelicula.component";
 import {SerieComponent} from "./serie/serie.component";
 import {SeriePresentacionComponent} from "./serie-presentacion/serie-presentacion.component";
@@ -84,8 +85,18 @@ export const RUTAS_APP: Routes = [
     component: PresentacionPeliculaComponent
 
   },
+
+
+  {
+    path: 'reconocimiento',
+    component: RegistroFacialComponent
+
+  },
+
+
   {
     path: '**',
     component: HomeComponent
+
   }
 ];

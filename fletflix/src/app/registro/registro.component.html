@@ -1,6 +1,8 @@
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item active" aria-current="page" style="font-size: 20px; text-align: center">Registro de Datos</li>
+    <li class="breadcrumb-item active" aria-current="page" style="font-size: 20px; text-align: center">Registro de
+      Datos
+    </li>
   </ol>
 </nav>
 <div class="row">
@@ -11,52 +13,176 @@
 
   <div class="col-sm-8">
     <div class="container">
-      <form>
+      <form (ngSubmit)="registroUsuario(formularioRegistro)"
+            #formularioRegistro="ngForm">
+
+
+        <div class="form-group" align="center">
+          <mat-form-field class="example-full-width">
+            <input matInput
+                   type="text" class="form-control" id="nombre" aria-describedby="emailHelp"
+                   placeholder="Ingrese su nombre"
+                   name="nombre" [(ngModel)]="nombre" #nombreFormulario="ngModel" style="height: 50px"
+                   required
+                   minlength="4"
+                   maxlength="30"
+                   pattern="[a-zA-Z]{4,30}"
+            >
+          </mat-form-field>
+
+          <div
+            class="alert alert-warning"
+            role="alert"
+            *ngIf="nombreFormulario.errors!==null &&
+                nombreFormulario.dirty=== true"
+            align="center">
+            <p *ngIf="nombreFormulario.errors.required">Campo obligatorio!</p>
+            <p *ngIf="nombreFormulario.errors.minlength">Nombre debe tener al menos 4 caracteres</p>
+            <p *ngIf="nombreFormulario.errors.pattern">Nombre no válido (ingresar solo letras)</p>
+          </div>
+        </div>
+
+
+        <div class="form-group" align="center">
+          <mat-form-field class="example-full-width">
+            <input matInput id="apellido" placeholder="Ingrese su Apellido"
+                   name="apellido" [(ngModel)]="apellido" #apellidoFormulario="ngModel" style="height: 50px"
+                   required
+                   minlength="4"
+                   maxlength="30"
+                   pattern="[a-zA-Z]{4,30}"
+            >
+          </mat-form-field>
+          <div
+            class="alert alert-warning"
+            role="alert"
+            *ngIf="apellidoFormulario.errors!==null &&
+                apellidoFormulario.dirty=== true"
+            align="center">
+            <p *ngIf="apellidoFormulario.errors.required">Campo obligatorio!</p>
+            <p *ngIf="apellidoFormulario.errors.minlength">Apellido debe tener al menos 4 caracteres</p>
+            <p *ngIf="apellidoFormulario.errors.pattern">Apellido no válido (ingresar solo letras)</p>
+          </div>
+        </div>
+
+
+        <div class="form-group" align="center">
+          <mat-form-field class="example-full-width">
+            <input matInput
+                   id="correo" placeholder="Ingrese su correo"
+                   name="correo" [(ngModel)]="correoElectronico" #correoFormulario="ngModel" style="height: 50px"
+                   required
+                   minlength="5"
+                   maxlength="20"
+                   pattern="[^@]+@[^@]+\.[a-zA-Z]{2,20}"
+            >
+          </mat-form-field>
+          <div
+            class="alert alert-warning"
+            role="alert"
+            *ngIf="correoFormulario.errors!==null &&
+              correoFormulario.dirty=== true"
+            align="center">
+            <p *ngIf="correoFormulario.errors.required">Campo obligatorio!</p>
+            <p *ngIf="correoFormulario.errors.minlength">El correo electrónico debe tener al menos 5
+              caracteres</p>
+            <p *ngIf="correoFormulario.errors.pattern">Correo electrónico no válido</p>
+          </div>
+        </div>
+
+
+        <div class="form-group" align="center">
+          <mat-form-field class="example-full-width">
+            <input matInput id="pais" placeholder="Ingrese su Pais"
+                   name="pais" [(ngModel)]="pais" #paisFormulario="ngModel"
+                   style="height: 50px"
+                   required
+                   minlength="5"
+                   maxlength="20"
+                   pattern="[a-zA-Z]{2,20}"
+            >
+          </mat-form-field>
+          <div
+            class="alert alert-warning"
+            role="alert"
+            *ngIf="paisFormulario.errors!==null &&
+                paisFormulario.dirty=== true"
+            align="center">
+            <p *ngIf="paisFormulario.errors.required">Campo obligatorio!</p>
+            <p *ngIf="paisFormulario.errors.minlength">País debe tener al menos 5
+              caracteres</p>
+            <p *ngIf="paisFormulario.errors.pattern">Nombre de País no válido</p>
+          </div>
+        </div>
+
+
+        <div class="form-group" align="center">
+          <mat-form-field class="example-full-width">
+            <input matInput id="ciudad" placeholder="Ingrese su ciudad"
+                   name="ciudad" [(ngModel)]="ciudad" #ciudadFormulario="ngModel"
+                   style="height: 50px"
+                   minlength="7"
+                   maxlength="20"
+                   pattern="[a-zA-z]{2,20}">
+          </mat-form-field>
+          <div
+            class="alert alert-warning"
+            role="alert"
+            *ngIf="ciudadFormulario.errors!==null &&
+                ciudadFormulario.dirty=== true"
+            align="center">
+            <p *ngIf="ciudadFormulario.errors.minlength">Ciudad debe tener al menos 5
+              caracteres</p>
+            <p *ngIf="ciudadFormulario.errors.pattern">Nombre de ciudad no válido</p>
+          </div>
+        </div>
+
+
+        <div class="form-group" align="center">
+          <mat-form-field class="example-full-width">
+            <input matInput id="telefono" placeholder="Ingrese su telefono"
+                   name="numeroTelefono" [(ngModel)]="numeroTelefono" #telefonoFormulario="ngModel"
+                   style="height: 50px"
+                   minlength="7"
+                   maxlength="20"
+                   pattern="[0-9]{7,20}">
+          </mat-form-field>
+          <div
+            class="alert alert-warning"
+            role="alert"
+            *ngIf="telefonoFormulario.errors!==null &&
+                telefonoFormulario.dirty=== true"
+            align="center">
+            <p *ngIf="telefonoFormulario.errors.minlength">Número de teléfono debe tener al menos 7
+              caracteres</p>
+            <p *ngIf="telefonoFormulario.errors.pattern">Numero de teléfono no válido (Ej. 0998877665)</p>
+          </div>
+        </div>
+
+
+        <div class="form-group" align="center">
         <mat-form-field class="example-full-width">
-    <textarea matInput
-              type="text" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Ingrese su nombre"
-              name="nombre" [(ngModel)]="nombre" #nombreFormulario
-    ></textarea>
+          <input matInput id="fecha" placeholder="Ingrese su fecha de nacimiento"
+                 name="fecha" [(ngModel)]="fechaNacimiento" #fechaFormulario="ngModel"
+                 style="height: 50px"
+                 maxlength="10"
+                 pattern="[0-9]{2}[/][0-9]{2}[/][0-9]{4}">
         </mat-form-field>
+          <div
+            class="alert alert-warning"
+            role="alert"
+            *ngIf="fechaFormulario.errors!==null &&
+                fechaFormulario.dirty=== true"
+            align="center">
+            <p *ngIf="fechaFormulario.errors.minlength">Número de teléfono debe tener al menos 7
+              caracteres</p>
+            <p *ngIf="fechaFormulario.errors.pattern">Fecha no válida (Ej. 03/16/1995 (dd/mm/aaaa))</p>
+          </div>
 
-        <mat-form-field class="example-full-width">
-    <textarea matInput id="apellido" placeholder="Ingrese su Apellido"
-              name="apellido" [(ngModel)]="apellido" #apellidoFormulario
+        </div>
 
-    ></textarea>
-        </mat-form-field>
 
-        <mat-form-field class="example-full-width">
-    <textarea matInput
-              id="correo" placeholder="Ingrese su correo"
-              name="correo" [(ngModel)]="correoElectronico" #correoFormulario
-
-    ></textarea>
-        </mat-form-field>
-
-        <mat-form-field class="example-full-width">
-    <textarea matInput id="pais" placeholder="Ingrese su Pais"
-              name="pais" [(ngModel)]="pais" #paisFormulario
-
-    ></textarea>
-        </mat-form-field>
-
-        <mat-form-field class="example-full-width">
-    <textarea matInput id="ciudad" placeholder="Ingrese su ciudad"
-              name="ciudad" [(ngModel)]="ciudad" #ciudadFormulario></textarea>
-        </mat-form-field>
-
-        <mat-form-field class="example-full-width">
-    <textarea matInput id="telefono" placeholder="Ingrese su telefono"
-              name="numeroTelefono" [(ngModel)]="numeroTelefono" #telefonoFormulario></textarea>
-        </mat-form-field>
-
-        <mat-form-field class="example-full-width">
-         <textarea matInput  id="fecha" placeholder="Ingrese su fecha de nacimiento"
-                   name="fecha" [(ngModel)]="fechaNacimiento" #fechaFormulario></textarea>
-        </mat-form-field>
-
-        <button type="submit" class="btn btn-primary" routerLink="/peliculas" (click)="crear()">Aceptar</button>
+        <button [disabled]="formularioRegistro.invalid" type="submit" class="btn btn-primary" routerLink="/reconocimiento" (click)="crear()">Aceptar</button>
       </form>
     </div>
 

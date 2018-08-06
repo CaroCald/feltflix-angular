@@ -32,6 +32,9 @@ import { CookieService } from 'ngx-cookie-service';
 import { SerieComponent } from './serie/serie.component';
 import { SeriePresentacionComponent } from './serie-presentacion/serie-presentacion.component';
 import { CardSerieComponent } from './card-serie/card-serie.component';
+import { ReconocimientoFacialComponent } from './reconocimiento-facial/reconocimiento-facial.component';
+import { RegistroFacialComponent } from './registro-facial/registro-facial.component';
+import { ErrorLogeoComponent } from './error-logeo/error-logeo.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +54,10 @@ import { CardSerieComponent } from './card-serie/card-serie.component';
     RegistroComponent,
     SerieComponent,
     SeriePresentacionComponent,
-    CardSerieComponent
+    CardSerieComponent,
+    ReconocimientoFacialComponent,
+    RegistroFacialComponent,
+    ErrorLogeoComponent
   ],
   imports: [
     MatButtonModule,MatBadgeModule, FormsModule, MatInputModule,MatSelectModule, MatToolbarModule,
