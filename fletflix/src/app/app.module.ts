@@ -33,6 +33,8 @@ import { SerieComponent } from './serie/serie.component';
 import { SeriePresentacionComponent } from './serie-presentacion/serie-presentacion.component';
 import { CardSerieComponent } from './card-serie/card-serie.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import {AutorizacionService} from "./servicios/autorizacion.service";
+import { ReconocimientoFacialComponent } from './reconocimiento-facial/reconocimiento-facial.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,8 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     SerieComponent,
     SeriePresentacionComponent,
     CardSerieComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    ReconocimientoFacialComponent
   ],
   imports: [
     MatButtonModule,MatBadgeModule, FormsModule, MatInputModule,MatSelectModule, MatToolbarModule,
@@ -65,7 +68,9 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
       }
     )
   ],
-  providers: [PeliculasService, CookieService ],
+  providers: [PeliculasService, CookieService, AutorizacionService ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}

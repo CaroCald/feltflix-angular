@@ -11,6 +11,7 @@ import {RegistroComponent} from "./registro/registro.component";
 import {PeliculaComponent} from "./pelicula/pelicula.component";
 import {SerieComponent} from "./serie/serie.component";
 import {SeriePresentacionComponent} from "./serie-presentacion/serie-presentacion.component";
+import {ReconocimientoFacialComponent} from "./reconocimiento-facial/reconocimiento-facial.component";
 
 export const RUTAS_APP: Routes = [
   {
@@ -41,6 +42,11 @@ export const RUTAS_APP: Routes = [
   {
     path: 'seriePresentacion',
     component: SeriePresentacionComponent,
+
+  },
+  {
+    path: 'reconocimiento',
+    component: ReconocimientoFacialComponent,
 
   },
   {
