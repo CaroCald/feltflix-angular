@@ -67,7 +67,7 @@ import {AutorizacionService} from "./servicios/autorizacion.service";
       }
     )
   ],
-  providers: [PeliculasService, CookieService, AutorizacionService ],
+  providers: [PeliculasService, CookieService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
