@@ -7,7 +7,9 @@ import {HttpClient, HttpHeaders, HttpParams} from "@angular/common/http";
   styleUrls: ['./reconocimiento-facial.component.css']
 })
 export class ReconocimientoFacialComponent implements OnInit {
-
+  respuesta: any
+  clickeado : boolean;
+  acceso: string;
   constructor(private http: HttpClient) {
     this.captures = [];
 
@@ -25,6 +27,7 @@ export class ReconocimientoFacialComponent implements OnInit {
 
   capture() {
     var context = this.canvas.nativeElement.getContext("2d").drawImage(this.video.nativeElement, 0, 0, 640, 480);
+    this.clickeado = true;
     this.captures.push(this.canvas.nativeElement.toDataURL("image/png"));
   }
    getHeaders(subscriptionKey: string) {
@@ -65,8 +68,7 @@ export class ReconocimientoFacialComponent implements OnInit {
     const headers = this.getHeaders('7cdb51cf3f7345f8a95fc9b3aaf6c885');
     const params = this.getParams();
     const blob = this.makeblob(this.canvas.nativeElement.toDataURL("image/png"));
-
-    return this.http.post(
+    this.respuesta = this.http.post(
       'https://eastus.api.cognitive.microsoft.com/face/v1.0/detect',
       blob,
       {
@@ -74,6 +76,7 @@ export class ReconocimientoFacialComponent implements OnInit {
         headers
       }
     ).subscribe(value => console.log(value));
+    return this.respuesta
   }
   public ngAfterViewInit() {
     if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
@@ -82,5 +85,8 @@ export class ReconocimientoFacialComponent implements OnInit {
         this.video.nativeElement.play();
       });
     }
+  }
+  presentarMensaje(){
+    return this.acceso = "Usted ha sido identificado"
   }
 }

@@ -9,6 +9,10 @@ import {Usuario} from "../servicios/usuario.service";
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  respuesta: any
+  clickeado : boolean;
+  correoElectronico;
+  acceso: string;
   @ViewChild("video")
   public video: ElementRef;
 
@@ -23,6 +27,8 @@ export class LoginComponent implements OnInit {
   }
   capture() {
     var context = this.canvas.nativeElement.getContext("2d").drawImage(this.video.nativeElement, 0, 0, 640, 480);
+    this.video.nativeElement.pause();
+    this.clickeado = true;
     this.captures.push(this.canvas.nativeElement.toDataURL("image/png"));
   }
   getHeaders(subscriptionKey: string) {
@@ -60,11 +66,11 @@ export class LoginComponent implements OnInit {
     return new Blob([uInt8Array], { type: contentType });
   }
   scanImage() {
+
     const headers = this.getHeaders('7cdb51cf3f7345f8a95fc9b3aaf6c885');
     const params = this.getParams();
     const blob = this.makeblob(this.canvas.nativeElement.toDataURL("image/png"));
-
-    return this.http.post(
+    this.respuesta = this.http.post(
       'https://eastus.api.cognitive.microsoft.com/face/v1.0/detect',
       blob,
       {
@@ -72,7 +78,10 @@ export class LoginComponent implements OnInit {
         headers
       }
     ).subscribe(value => console.log(value));
+    return this.respuesta
   }
+
+
   public ngAfterViewInit() {
     if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
       navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
@@ -90,4 +99,20 @@ export class LoginComponent implements OnInit {
       );
 
   }
+
+  presentarMensaje(){
+    return this.acceso = "Usted ha sido identificado"
+  }
 }
+interface caracteristicas{
+  faceAttributes: cara[],
+  gender: string,
+  hair: cabello[]
+}
+
+interface cara{
+  age: number
+}
+ interface cabello{
+   hair: string[6]
+ }

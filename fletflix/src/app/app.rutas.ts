@@ -12,6 +12,7 @@ import {PeliculaComponent} from "./pelicula/pelicula.component";
 import {SerieComponent} from "./serie/serie.component";
 import {SeriePresentacionComponent} from "./serie-presentacion/serie-presentacion.component";
 import {ReconocimientoFacialComponent} from "./reconocimiento-facial/reconocimiento-facial.component";
+import {MiCuentaComponent} from "./mi-cuenta/mi-cuenta.component";
 
 export const RUTAS_APP: Routes = [
   {
@@ -88,6 +89,11 @@ export const RUTAS_APP: Routes = [
   {
     path: 'presentacion',
     component: PresentacionPeliculaComponent
+
+  },
+  {
+    path: 'micuenta',
+    component: MiCuentaComponent,
 
   },
   {

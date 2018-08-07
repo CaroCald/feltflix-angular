@@ -35,6 +35,7 @@ import { CardSerieComponent } from './card-serie/card-serie.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { ReconocimientoFacialComponent } from './reconocimiento-facial/reconocimiento-facial.component';
 import {AutorizacionService} from "./servicios/autorizacion.service";
+import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,7 +56,8 @@ import {AutorizacionService} from "./servicios/autorizacion.service";
     SeriePresentacionComponent,
     CardSerieComponent,
     SearchBarComponent,
-    ReconocimientoFacialComponent
+    ReconocimientoFacialComponent,
+    MiCuentaComponent
   ],
   imports: [
     MatButtonModule,MatBadgeModule, FormsModule, MatInputModule,MatSelectModule, MatToolbarModule,

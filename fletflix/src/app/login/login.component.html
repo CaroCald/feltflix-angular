@@ -3,15 +3,34 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-6">
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="nombre">Correo</span>
-        </div>
-        <input type="text" class="form-control" placeholder="Ingrese su correo" aria-label="Nombre" aria-describedby="nombre">
+
+
+      <input matInput
+             id="correo" placeholder="Ingrese su correo"
+             name="correo" [(ngModel)]="correoElectronico" #correoFormulario="ngModel"
+             style="height: 50px; width: 100%;"
+             required
+             minlength="5"
+             maxlength="20"
+             pattern="[^@]+@[^@]+\.[a-zA-Z]{2,20}"
+      >
+
+      <div
+        class="alert alert-warning"
+        role="alert"
+        *ngIf="correoFormulario.errors!==null &&
+              correoFormulario.dirty=== true"
+        align="center">
+        <p *ngIf="correoFormulario.errors.required">Campo obligatorio!</p>
+        <p *ngIf="correoFormulario.errors.minlength">El correo electrónico debe tener al menos 5
+          caracteres</p>
+        <p *ngIf="correoFormulario.errors.pattern">Correo electrónico no válido</p>
       </div>
     </div>
     <div class="col-sm-6">
-      <small id="ayudaContrasena" class="form-text text-muted">Para ingresar se verificara su rostro acerquese a la camara</small>
+      <small id="ayudaContrasena" class="form-text text-muted">Para ingresar se verificara su rostro acerquese a la
+        camara
+      </small>
     </div>
 
   </div>
@@ -19,23 +38,28 @@
     <div class="row">
       <div class="col-sm-6">
         <div class="card" style="width: 25rem;">
-          <div class="card-header">Acercate a la camara </div>
+          <div class="card-header">Acercate a la camara</div>
           <div class="container">
             <div id="app">
-              <div><video #video id="video" width="100%" height="100%" autoplay></video></div>
-              <div><button id="snap" class="btn btn-secondary" (click)="capture()">Tomar Foto</button></div>
+              <div> <video #video id="video" width="100%" height="100%" autoplay></video></div>
+              <div> <button id="snap" class="btn btn-secondary" (click)="capture()">Tomar Foto</button></div>
+              <div
+                class="alert alert-warning"
+                role="alert"
+                *ngIf="clickeado"
+              >
+                {{presentarMensaje()}}
+              </div>
               <canvas #canvas id="canvas" width="640" height="480"></canvas>
-              <ul>
-                <li *ngFor="let c of captures">
-                  <img src="{{ c }}" height="50" />
-                </li>
-              </ul>
             </div>
           </div>
         </div>
       </div>
       <div class="col-sm-6">
-        <div><button class="btn btn-secondary" (click)="scanImage()">Ingresar</button></div>
+        <div>
+          <button id="btnIngresar" class="btn btn-secondary" (click)="scanImage()" routerLink="/peliculas">Ingresar
+          </button>
+        </div>
 
       </div>
     </div>
