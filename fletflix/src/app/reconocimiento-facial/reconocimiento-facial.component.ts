@@ -1,31 +1,33 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
-import { CookieService } from 'ngx-cookie-service';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import {HttpClient, HttpHeaders, HttpParams} from "@angular/common/http";
-import {Usuario} from "../servicios/usuario.service";
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-reconocimiento-facial',
+  templateUrl: './reconocimiento-facial.component.html',
+  styleUrls: ['./reconocimiento-facial.component.css']
 })
-export class LoginComponent implements OnInit {
+export class ReconocimientoFacialComponent implements OnInit {
+
+  constructor(private http: HttpClient) {
+    this.captures = [];
+
+  }
+
+  ngOnInit() {
+  }
   @ViewChild("video")
   public video: ElementRef;
 
   @ViewChild("canvas")
   public canvas: ElementRef;
-  constructor(private cookieService: CookieService, private http: HttpClient) {this.captures = []; }
 
   public captures: Array<any>;
-  ngOnInit() {
-    this.cookieService.set( 'user', 'Caro' );
-    this.cargar();
-  }
+
   capture() {
     var context = this.canvas.nativeElement.getContext("2d").drawImage(this.video.nativeElement, 0, 0, 640, 480);
     this.captures.push(this.canvas.nativeElement.toDataURL("image/png"));
   }
-  getHeaders(subscriptionKey: string) {
+   getHeaders(subscriptionKey: string) {
     let headers = new HttpHeaders();
     headers = headers.set('Content-Type', 'application/octet-stream');
     headers = headers.set('Ocp-Apim-Subscription-Key', subscriptionKey);
@@ -45,7 +47,7 @@ export class LoginComponent implements OnInit {
     return httpParams;
 
   }
-  makeblob(dataURL) {
+   makeblob(dataURL) {
     const BASE64_MARKER = ';base64,';
     const parts = dataURL.split(BASE64_MARKER);
     const contentType = parts[0].split(':')[1];
@@ -80,14 +82,5 @@ export class LoginComponent implements OnInit {
         this.video.nativeElement.play();
       });
     }
-  }
-
-  cargar(){
-    this.http.get<Usuario>('http://localhost:3000/Usuario/mostrar')
-      .subscribe((value: Usuario) => {
-          console.log(value)
-        }
-      );
-
   }
 }

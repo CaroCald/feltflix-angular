@@ -1,4 +1,4 @@
-<h3 style="text-align: center; margin-top: 30px">Bienvenido</h3>
+<h3 style="text-align: center; margin-top: 30px; background-color: grey; color: white">Bienvenido</h3>
 
 <div class="container">
   <div class="row">
@@ -15,29 +15,30 @@
     </div>
 
   </div>
-
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="card" style="width: 25rem;">
-        <div class="card-header">Acercate a la camara </div>
-        <img class="card-img-top" src="https://www.movilzona.es/app/uploads/2017/10/Facebook-reconocimiento-facial.jpg?x=810" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">
-            Espera a que comience el reconocimiento...
-          </p>
+  <div class="container" style="margin-top: 50px">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card" style="width: 25rem;">
+          <div class="card-header">Acercate a la camara </div>
+          <div class="container">
+            <div id="app">
+              <div><video #video id="video" width="100%" height="100%" autoplay></video></div>
+              <div><button id="snap" class="btn btn-secondary" (click)="capture()">Tomar Foto</button></div>
+              <canvas #canvas id="canvas" width="640" height="480"></canvas>
+              <ul>
+                <li *ngFor="let c of captures">
+                  <img src="{{ c }}" height="50" />
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="card-footer bg-transparent border-black">Footer</div>
       </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="form-group" style="margin-top: 100px">
-        <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-        <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
-        <div class="help-block with-errors"></div>
+      <div class="col-sm-6">
+        <div><button class="btn btn-secondary" (click)="scanImage()">Ingresar</button></div>
+
       </div>
-
-      <button type="button" class="btn btn-secondary">Aceptar</button>
-
     </div>
   </div>
 </div>
+
