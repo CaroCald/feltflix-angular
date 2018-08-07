@@ -34,7 +34,7 @@ import { SeriePresentacionComponent } from './serie-presentacion/serie-presentac
 import { CardSerieComponent } from './card-serie/card-serie.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { ReconocimientoFacialComponent } from './reconocimiento-facial/reconocimiento-facial.component';
-
+import {AutorizacionService} from "./servicios/autorizacion.service";
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,7 +67,7 @@ import { ReconocimientoFacialComponent } from './reconocimiento-facial/reconocim
       }
     )
   ],
-  providers: [PeliculasService, CookieService ],
+  providers: [PeliculasService, CookieService, AutorizacionService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
